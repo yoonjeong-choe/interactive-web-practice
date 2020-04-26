@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        h1{
+          color: red;  
+        }
+        p{
+          color: blue;  
+        }
+        .box-container{
+            display:flex;
+        }
+        .box{
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            border: 6px solid black;
+        }
+        .box:hover {
+            background: green;
+            transform: scale(1.5) translate(20px, 30px) rotate(30deg);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transform</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, non maxime quasi mollitia modi asperiores aliquam. Illum enim id recusandae commodi ad, nemo eum vitae officiis, temporibus quaerat cum tempora, consequatur consectetur excepturi corrupti quasi. Eos recusandae laudantium ratione dolorem iure, fuga sapiente distinctio, delectus adipisci nemo quia deleniti. Cupiditate cumque est, ut, modi in animi voluptates provident excepturi laborum voluptatibus ipsum, quia corrupti? Expedita corrupti sequi ratione quisquam modi accusantium quidem similique enim nostrum quibusdam unde quasi qui assumenda veritatis voluptatem laborum voluptatibus nobis aspernatur, dolor officia dignissimos. Maiores dolores fugiat officia ipsa accusantium vero tenetur mollitia veritatis provident.</p>
+    <div class="box-container">
+        <div class="box">
+            <img src="https://source.unsplash.com/random/100x100?sig=1" alt="random-image">
+        </div>
+        <div class="box">
+            <img src="https://source.unsplash.com/random/100x100?sig=2" alt="random-image">
+        </div>
+        <div class="box">
+            <img src="https://source.unsplash.com/random/100x100?sig=3" alt="random-image">
+        </div>
+        <div class="box">
+            <img src="https://source.unsplash.com/random/100x100?sig=4" alt="random-image">
+        </div>
+        <div class="box">
+            <img src="https://source.unsplash.com/random/100x100?sig=5" alt="random-image">
+        </div>
+    </div>
+</body>
+</html>

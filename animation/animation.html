@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes sample-animation {
+            0%{
+                transform: translate(0,0);
+            }
+            25%{
+                transform: translate(300px,300px); 
+                background:lightsalmon;
+            }
+            55%{
+                transform: translate(450px,150px);
+                background:lightsteelblue;
+            }
+            85%{
+                transform: translate(600px,300px); 
+                background:khaki;
+            }
+            100%{
+                transform: translate(900px,-1000px); 
+                background:lightsalmon;
+            }
+        }
+        .circle{
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+            background: khaki;
+            border-radius: 50%;
+        }
+        .circle:hover {
+            background:lightgreen;
+            animation:sample-animation 3s infinite alternate ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <div class="circle"></div>
+</body>
+</html>

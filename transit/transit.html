@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box-container{
+            display: flex;
+        }
+        .box{
+            background:khaki;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            border: solid black 1px;
+            transition: 3s .2s cubic-bezier(0.42, 0, 0.01,-1.41);
+        }
+        .box:hover{
+            transform: scale(1.5) translate(20px, 30px) rotate(10deg);
+            background:yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transition</h1>
+    <div class="box-container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
